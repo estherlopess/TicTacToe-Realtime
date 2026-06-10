@@ -1,0 +1,24 @@
+git config --global user.name estherlopess
+git config --global user.email estherlopes678@gmail.com
+
+dotnet new mvc -o ToDoPlatform
+dotnet add package Microsoft.EntityFrameworkCore --version 10.0.3
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 10.0.3
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 10.0.3
+dotnet add package Microsoft.AspNetCore.Identity.EntityFrameworkCore --version 10.0.3
+dotnet add package MySql.EntityFrameworkCore --version 10.0.1
+
+
+--configuração do firebase
+const firebaseConfig = {
+  apiKey: "AIzaSyB51z5QKmDrDID-SEKiQ1vDKzdRWZv5veA",
+  authDomain: "tictactoe-realtime4.firebaseapp.com",
+  databaseURL: "https://tictactoe-realtime4-default-rtdb.firebaseio.com",
+  projectId: "tictactoe-realtime4",
+  storageBucket: "tictactoe-realtime4.firebasestorage.app",
+  messagingSenderId: "422906983756",
+  appId: "1:422906983756:web:0a5ff7b89513efe06c4be9"
+};
+
+--criar projeto
+npx create-expo-app tictactoe --template blank-typescript
